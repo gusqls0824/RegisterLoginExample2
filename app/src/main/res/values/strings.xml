@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">RegitserLoginExample</string>
+    <string name="app_name">모바일 한컴타자 연습</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="action_settings">Settings</string>
+
+
 </resources>

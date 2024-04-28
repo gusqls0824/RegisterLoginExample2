@@ -40,20 +40,7 @@ public class MainActivity extends AppCompatActivity {
         // 가져온 이메일을 TextView에 표시
         TextView textInformation = findViewById(R.id.text_Information);
         textInformation.setText(userEmail);
-
-        SearchView searchView = findViewById(R.id.search_view);
-
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                return true;
-            }
-        });
+        
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         drawerView = (View)findViewById(R.id.drawer);

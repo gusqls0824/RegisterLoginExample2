@@ -98,7 +98,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
-        android:fontFamily="@font/windsongr"
         android:text="Keypad Typing"
         android:textColor="@color/white"
         android:textSize="45sp"

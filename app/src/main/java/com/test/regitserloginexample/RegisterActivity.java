@@ -140,10 +140,9 @@ public class RegisterActivity extends AppCompatActivity {
                                 account.setPassword(strPwd); //사용자의 패스워드
                                 // setValue : database에 insert (삽입) 행위
                                 mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
-
-                                Toast.makeText(RegisterActivity.this, "회원가입에 성공하셨습니다.", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                                 startActivity(intent);
+                                Toast.makeText(RegisterActivity.this, "회원가입에 성공하셨습니다.", Toast.LENGTH_SHORT).show();
                                 finish();
                             } else {
                                 Toast.makeText(RegisterActivity.this,"회원가입에 실패하셨습니다. @를 포함한 다른 이메일이나 비밀번호를 입력하세요.",Toast.LENGTH_SHORT).show();
